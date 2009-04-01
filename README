@@ -7,18 +7,18 @@ memory barrier semantics, and allows the construction of code that
 involves minimum overhead across a variety of architectures.
 
 Runtime requirements:
-  cygwin-1.5.24-2
+  cygwin-1.7.0-44
+  libgcc1-4.3.2-2
 
 Build requirements:
-  cygwin-1.5.24-2
-  autoconf2.5-2.61-1
-  automake1.9-1.9.6-2
-  binutils-20060817-1
-  cygport-0.3.5-1
-  gawk-3.1.5-4
-  gcc-core-3.4.4-3
-  libtool1.5-1.5.23a-2
-  make-3.81-1
+  autoconf2.5-2.63-10
+  automake1.9-1.9.6-10
+  binutils-20080624-2
+  cygport-0.9.6-1
+  gawk-3.1.6-2
+  gcc4-core-4.3.2-2
+  libtool-2.2.7a-11
+  make-3.81-2
   sed-4.1.5-2
 
 Canonical website:
@@ -38,14 +38,29 @@ Build instructions:
 
 This will create:
   /usr/src/libatomic_ops-1.2-X-src.tar.bz2
-  /usr/src/libatomic_ops-1.2-X.tar.bz2
+  /usr/src/libatomic_ops-devel-1.2-X.tar.bz2
+  /usr/src/libatomic_ops0-1.2-X.tar.bz2
 
 -------------------------------------------
 
-Files included in the binary package:
+Files included in the binary packages:
 
+(libatomic_ops0)
   /usr/bin/cygatomic_ops-0.dll
   /usr/bin/cygatomic_ops_gpl-0.dll
+  /usr/share/doc/libatomic_ops/AUTHORS
+  /usr/share/doc/libatomic_ops/COPYING
+  /usr/share/doc/libatomic_ops/ChangeLog
+  /usr/share/doc/libatomic_ops/INSTALL
+  /usr/share/doc/libatomic_ops/LICENSING.txt
+  /usr/share/doc/libatomic_ops/NEWS
+  /usr/share/doc/libatomic_ops/README
+  /usr/share/doc/libatomic_ops/README.txt
+  /usr/share/doc/libatomic_ops/README_malloc.txt
+  /usr/share/doc/libatomic_ops/README_stack.txt
+  /usr/share/doc/libatomic_ops/README_win32.txt
+
+(libatomic_ops-devel)
   /usr/include/atomic_ops.h
   /usr/include/atomic_ops/generalize-small.h
   /usr/include/atomic_ops/generalize.h
@@ -98,25 +113,13 @@ Files included in the binary package:
   /usr/lib/libatomic_ops_gpl.a
   /usr/lib/libatomic_ops_gpl.dll.a
   /usr/lib/libatomic_ops_gpl.la
-  /usr/share/doc/Cygwin/libatomic_ops-1.2.README
-  /usr/share/doc/libatomic_ops-1.2/AUTHORS
-  /usr/share/doc/libatomic_ops-1.2/COPYING
-  /usr/share/doc/libatomic_ops-1.2/ChangeLog
-  /usr/share/doc/libatomic_ops-1.2/INSTALL
-  /usr/share/doc/libatomic_ops-1.2/LICENSING.txt
-  /usr/share/doc/libatomic_ops-1.2/NEWS
-  /usr/share/doc/libatomic_ops-1.2/README
-  /usr/share/doc/libatomic_ops-1.2/README.txt
-  /usr/share/doc/libatomic_ops-1.2/README_malloc.txt
-  /usr/share/doc/libatomic_ops-1.2/README_stack.txt
-  /usr/share/doc/libatomic_ops-1.2/README_win32.txt
 
 ------------------
 
 Port Notes:
 
------ version 1.2-1 -----
-Initial release for Cygwin.
+----- version 1.2-10 -----
+Initial release for Cygwin 1.7
 
 
 Cygwin port maintained by:

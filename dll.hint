@@ -1,5 +1,7 @@
 category: Libs
-sdesc: "Atomic memory update operation library (sources)"
+requires: cygwin libgcc1
+external-source: libatomic_ops
+sdesc: "Atomic memory update operation library (runtime)"
 ldesc: "Provides implementations for atomic memory update operations on 
 a number of architectures. This allows direct use of these in reasonably 
 portable code. Unlike earlier similar packages, this one explicitly 

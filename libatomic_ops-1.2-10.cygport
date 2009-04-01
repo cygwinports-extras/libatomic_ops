@@ -1,0 +1,14 @@
+DESCRIPTION="Atomic memory update operation library"
+HOMEPAGE="http://www.hpl.hp.com/research/linux/atomic_ops/"
+SRC_URI="http://www.hpl.hp.com/research/linux/atomic_ops/download/${P}.tar.gz"
+PATCH_URI="1.2-libtoolize.patch"
+
+PKG_NAMES="${PN} ${PN}0 ${PN}-devel"
+PKG_HINTS="setup dll devel"
+libatomic_ops0_CONTENTS="usr/bin/*-0.dll usr/share/doc/"
+libatomic_ops_devel_CONTENTS="usr/include/ usr/lib/"
+
+src_install() {
+	cd ${B}
+	cyginstall pkgdatadir=/usr/share/doc/${PN}
+}
