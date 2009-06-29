@@ -1,5 +1,5 @@
 category: Libs
-requires: cygwin libatomic_ops0
+requires: libatomic_ops0
 external-source: libatomic_ops
 sdesc: "Atomic memory update operation library (development)"
 ldesc: "Provides implementations for atomic memory update operations on 
